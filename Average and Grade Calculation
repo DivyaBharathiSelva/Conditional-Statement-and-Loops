@@ -1,0 +1,21 @@
+m1=int(input("Enter your first number: "))
+m2=int(input("Enter your second number: "))
+m3=int(input("Enter your third number: "))
+m4=int(input("Enter your fourth number: "))
+m5=int(input("Enter your fifth number: "))
+a=(m1+m2+m3+m4)/5
+print("Average: ",a)
+if a>=90:
+    print("Grade O")
+elif a>=80 and a<=89:
+    print("Grade A+")
+elif a>=70 and a<=79:
+    print("Grade A")
+elif a>=60 and a<=69:
+    print("Grade B+")
+elif a>=55 and a<=59:
+    print("Grade B")
+elif a>=30 and a<=54:
+    print("Grade C")
+else:
+    print("Fail")
