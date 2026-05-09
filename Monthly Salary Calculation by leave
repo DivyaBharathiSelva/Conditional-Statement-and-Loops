@@ -1,0 +1,8 @@
+s=int(input("Enter monthly salary:"))
+l=int(input("Enter no.of.days leave taken:"))
+if l>=0 and l<=2:
+   print("Total salary:",s)
+elif l>2:
+   print("Total salary:",s-((l-2)*500))
+else:
+   print("invalid leave!!")
