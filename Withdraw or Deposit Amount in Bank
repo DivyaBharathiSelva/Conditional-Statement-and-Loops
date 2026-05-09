@@ -1,0 +1,21 @@
+ab=int(input("Enter balance:"))
+print("1.Deposit\n2.Withdraw")
+tr=int(input("Enter type of transcation:"))
+if tr==1:
+   d=int(input("Enter amount for deposit:"))
+   if d>=1000:
+      ab=ab+d
+      print("Balance after deposit:",ab)
+   else:
+      print("Only deposit amount greater than 1000...")
+elif tr==2:
+   w=int(input("Enter amount for withdraw:"))
+   if w<=ab and w>=1000:
+      ab=ab-w
+      print("Balance after withdraw:",ab)
+   elif w<1000:
+      print("only withdraw amount greater than 1000!!!")
+   elif w>ab:
+      print("your withdraw amount is greater than balance...")
+else:
+   print("Invalid Transcation...!!")
